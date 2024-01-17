@@ -1,0 +1,9 @@
+    /*FUENTES*/
+    @font-face {
+        font-family: "fajala";
+        src: url("assets/fonts/fuente.ttf");
+    }
+
+    .fajala {
+        font-family: "fajala", Helvetica, Arial;
+    }

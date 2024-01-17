@@ -30,7 +30,8 @@
     </article>
 
     <button class="mt-5 bg-[#4A6FA5] text-white p-3 w-full font-bold rounded-lg m-4 block mx-auto sm:px-8
-        sm:w-auto 
+        sm:w-auto hover:bg-[#254E77] hover:scale-105 hover:shadow-lg hover:shadow-[#4A6FA5]
+        active:bg-[#254E77] active:scale-100 active:shadow-lg active:shadow-[#4A6FA5]
         ">Ver todas las entradas</button>
 
 </div>

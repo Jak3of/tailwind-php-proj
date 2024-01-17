@@ -1,29 +1,4 @@
-<script>
 
-    document.addEventListener("DOMContentLoaded", function (event) {
-
-        document.getElementById("boton-menu").addEventListener("click", function () {
-            document.getElementById("sidebar").classList.toggle("hidden")
-            document.getElementById("boton-menu-close").classList.toggle("hidden")
-        })
-        document.getElementById("boton-menu-close").addEventListener("click", function () {
-            document.getElementById("sidebar").classList.toggle("hidden")
-            document.getElementById("boton-menu-close").classList.toggle("hidden")
-        })
-
-        document.getElementById("boton-submenu").addEventListener("click", function () {
-
-            document.getElementById("submenu").classList.toggle("hidden")
-
-        })
-
-
-
-
-
-    })
-
-</script>
 <header class=" bg-[#166088] text-gray-100 w-full h-14 fixed top-0 left-0 right-0 z-50 shadow-2xl">
     <div class="container mx-auto flex flex-row items-center justify-around h-full ">
         <div id=logo class="flex flex-col items-center justify-start ">
