@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require_once 'components/helper.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -17,8 +18,9 @@
 <body class="bg-[#C0D6DF] flex flex-col min-h-screen ">
     <?php require_once "components/header.php"; ?>
 
-    <main class="flex-grow">
-    <div id="container" class="mt-20 container mx-auto grid grid-cols-1 grid-rows-2  sm:grid-cols-3 sm:grid-rows-2 gap-2 lg:gap-4">
+    <main class="flex-grow mb-4">
+    <div id="container" class="mt-20 container mx-auto grid grid-cols-1 grid-rows-3  
+    sm:grid-cols-3 sm:grid-rows-1 gap-2 lg:gap-4">
 
         <?php require_once "components/sidebar.php"; ?>
 

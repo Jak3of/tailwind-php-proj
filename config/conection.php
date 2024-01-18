@@ -12,7 +12,10 @@
 
         mysqli_query($conn, "SET NAMES 'utf8'");
 
-        session_start();
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+        
     }
 
 

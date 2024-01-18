@@ -1,9 +1,9 @@
-
 <header class=" bg-[#166088] text-gray-100 w-full h-14 fixed top-0 left-0 right-0 z-50 shadow-2xl">
     <div class="container mx-auto flex flex-row items-center justify-around h-full ">
         <div id=logo class="flex flex-col items-center justify-start ">
             <a class="flex items-center" href="index.php">
-                <h1 class="fajala text-3xl font-bold text-[#C0D6DF] [text-shadow:_1px_1px_0px_black,_2px_2px_0px_black]">
+                <h1
+                    class="fajala text-3xl font-bold text-[#C0D6DF] [text-shadow:_1px_1px_0px_black,_2px_2px_0px_black]">
                     Blog de Videojuegos</h1>
             </a>
         </div>
@@ -25,12 +25,8 @@
                         [&>li]:py-2 [&>li]:sm:text-lg [&>li>a]:text-slate-200 [&>li:hover]:bg-[#4F6D7A] 
                         [&>li:last-child:hover]:sm:rounded-b-lg
                         [&>li]:w-full [&>li]:sm:h-full [&>li]:flex [&>li]:items-center [&>li]:justify-center
-                        [&>li>a]:whitespace-nowrap " 
-                        id="submenu">
-                        <li class="hover:bg-[#4F6D7A]"><a href="index.php">Categoria 1</a></li>
-                        <li class="hover:bg-[#4F6D7A]"><a href="index.php">Categoria 2</a></li>
-                        <li class="hover:bg-[#4F6D7A]"><a href="index.php">Categoria 3</a></li>
-                        <li class="hover:bg-[#4F6D7A]"><a href="index.php">Categoria 4</a></li>
+                        [&>li>a]:whitespace-nowrap " id="submenu">
+                        <?php include 'view_categories.php'; ?>
                     </ul>
                 </li>
 
