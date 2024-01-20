@@ -10,7 +10,10 @@
 
 
 
-<?php require_once "components/ultimasEntradas.php"; ?>
+<h1>Todas las Entradas</h1>
+<?= listArticlesLasted2(); ?>
+
+
 
 
 

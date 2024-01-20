@@ -72,11 +72,10 @@ if (isset($_POST)) {
                 $sql = "INSERT INTO users (name, surname, email, password,fecha) VALUES ('$name', '$surname', '$email', '$password', NOW())";
                 $result = mysqli_query($conn, $sql);
                 if ($result) {
-                    $_SESSION['user'] = array(
-                        'name' => htmlspecialchars_decode($name), 
-                        'surname' => htmlspecialchars_decode($surname), 
-                        'email' => htmlspecialchars_decode($email)
-                    );
+                    $sql = "SELECT * FROM users WHERE email = '$email'";
+                    $result = mysqli_query($conn, $sql);
+                    $user = mysqli_fetch_assoc($result);
+                    $_SESSION['user'] = $user;
                     reLocation('register', 'El usuario se ha registrado correctamente');
                 } else {
                     reLocation('register', 'El usuario no se ha podido registrar');

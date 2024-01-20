@@ -8,10 +8,17 @@
 
 <?php require_once "components/contentHeader.php"; ?>
 
+<?php 
+    if (isset($_GET['id'])):
+        $id = $_GET['id'];
+          
+?>
 
 
-<?php require_once "components/ultimasEntradas.php"; ?>
+    <?= getArticle($id) ?>
+        
 
+<?php endif; ?>
 
 
 <?php require_once "components/footer.php"; ?>
